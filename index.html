@@ -3,12 +3,42 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Edgar Maldonado | Front-End Developer</title>
+	<link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700|Roboto" rel="stylesheet">
 	<link rel="stylesheet" href="assets/css/bootstrap.min.css">	
 	<link rel="stylesheet" href="assets/css/styletheme.css">	
-	<link href="https://fonts.googleapis.com/css?family=Lato|Roboto:300,400,700" rel="stylesheet">
+	
 </head>
 <body>
-	<div ng-view></div>
+	<header>
+		<nav class="navbar navbar-default">
+	        <div class="container-fluid">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+					  <span class="sr-only">Toggle navigation</span>
+					  <span class="icon-bar"></span>
+					  <span class="icon-bar"></span>
+					  <span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="#"><span>medgarin</span>.com</a>
+				</div>
+	          <div id="navbar" class="navbar-collapse collapse">
+	            <ul class="nav navbar-nav">
+	              <li class="active"><a href="#">Home</a></li>
+	              <li><a href="#">Formación</a></li>
+	              <li><a href="#">Portafolio</a></li>
+	              <li><a href="#">Acerca de</a></li>
+	              <li><a href="#">Skills</a></li>	              
+	            </ul>
+	            <ul class="nav navbar-nav navbar-right">
+	              <li class="active-mat"><a href="./">Conctacto<span class="sr-only">(current)</span></a></li>
+	            </ul>
+	          </div><!--/.nav-collapse -->
+	        </div><!--/.container-fluid -->
+	      </nav>
+	</header>
+	<div ng-view>
+		
+	</div>
 	<!-- lybraries -->
 	<script src="assets/vendor/angular.min.js"></script>
 	<script src="assets/vendor/angular-route.min.js"></script>
